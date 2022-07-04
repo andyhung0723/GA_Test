@@ -28,13 +28,13 @@
 
       console.log('at');
 
-      dataLayer = [
-        {
-          user_id: 'lienhung0723',
-          google_id: 'aabvb',
-          product_category: 'RR',
-        },
-      ];
+      // dataLayer = [
+      //   {
+      //     user_id: 'lienhung0723',
+      //     google_id: 'aabvb',
+      //     product_category: 'RR',
+      //   },
+      // ];
 
       console.log(dataLayer);
     </script>
@@ -169,6 +169,11 @@
         },
       ];
       console.log('body after');
+      dataLayer.push({
+        user_id: 'aaabbb',
+        google_id: 'nnn',
+        product_category: 'fff',
+      });
     </script>
     <table class="table table-sticky">
       <!--     <thead class="thead-light">
