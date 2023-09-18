@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <link
+        href="https://andyhung0723.github.io/GA_Test/gosu-header.css"
+        rel="stylesheet"
+      />
+    </div>
+    <div class="header-wrap" style="width: 100%; height: 90px">
+      <div
+        class="header bg-primary"
+        style="
+          width: 90%;
+          min-height: 90px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          box-shadow: 1px 0 3px 1px rgba(0, 0, 0, 0.3);
+          background-color: #fff;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          padding: 0 5%;
+          z-index: 9;
+          font-weight: 400;
+        "
+      >
+        <div
+          class="logo"
+          style="
+            min-width: 280px;
+            height: 90px;
+            z-index: 9;
+            background: url('https://picture-original.fevercdn.com/page-feversocial-202146-482d116c-49ec-4c85-8eac-dc41bda798a2.png')
+              center center / contain no-repeat;
+          "
+        >
+          <a
+            href="https://www.anyong.com.tw"
+            style="display: block; width: 100%; height: 100%"
+          ></a>
+        </div>
+        <div
+          class="menu-icon"
+          style="
+            display: none;
+            cursor: pointer;
+            font-size: 36px;
+            margin-left: auto;
+            z-index: 99;
+          "
+        >
+          <div id="menuToggle">
+            <div
+              class="menu_line-top"
+              style="
+                width: 30px;
+                height: 3px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: transform 0.4s;
+              "
+            ></div>
+            <div
+              class="menu_line-middle"
+              style="
+                width: 30px;
+                height: 3px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: transform 0.4s;
+              "
+            ></div>
+            <div
+              class="menu_line-down"
+              style="
+                width: 30px;
+                height: 3px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: transform 0.4s;
+              "
+            ></div>
+          </div>
+        </div>
+
+        <ul
+          class="menu"
+          style="display: flex; align-items: end; margin: 0; z-index: 9"
+        >
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >最新消息</a
+            >
+          </li>
+          <li
+            class="dropdown"
+            style="
+              list-style: none;
+              margin-left: 0.5rem;
+              z-index: 9;
+              position: relative;
+            "
+          >
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >解決方案</a
+            >
+
+            <ul
+              class="dropdown-content"
+              style="
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                margin: 0;
+                padding: 0;
+                border-radius: 0.5rem;
+                z-index: 9;
+              "
+            >
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >展演行銷業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >金融產業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >藥品產業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >汽車產業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >零售產業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >政府機關</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >服務項目</a
+            >
+          </li>
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >成功案例</a
+            >
+          </li>
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >GOSU 教學資源</a
+            >
+          </li>
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >立即適用</a
+            >
+          </li>
+          <li
+            class="btn-item"
+            style="list-style: none; margin-left: 0.5rem; z-index: 9"
+          >
+            <a
+              class="btn"
+              href="#"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.75rem 1.5rem;
+                text-decoration: none;
+                color: #fff;
+                white-space: nowrap;
+                font-weight: 400;
+                background-color: #4285f4;
+                outline: 0;
+                border: none;
+                border-radius: 2rem;
+                margin-bottom: 0.5rem;
+              "
+              >聯絡我們</a
+            >
+          </li>
+        </ul>
+
+        <ul
+          class="menu menu-mobile"
+          style="display: none; align-items: end; margin: 0; z-index: 9"
+        >
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >最新消息</a
+            >
+          </li>
+          <li
+            class="dropdown"
+            style="
+              list-style: none;
+              margin-left: 0.5rem;
+              z-index: 9;
+              position: relative;
+            "
+          >
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >解決方案</a
+            >
+
+            <ul
+              class="dropdown-content"
+              style="
+                display: none;
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                margin: 0;
+                padding: 0;
+                border-radius: 0.5rem;
+                z-index: 9;
+              "
+            >
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >展演行銷業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >金融產業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >藥品產業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >汽車產業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >零售產業</a
+                >
+              </li>
+              <li
+                style="
+                  list-style: none;
+                  margin-left: 0;
+                  z-index: 9;
+                  padding: 0.5rem;
+                  border-radius: 0.5rem;
+                  min-width: 12rem;
+                "
+              >
+                <a
+                  href="#"
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem 1rem;
+                    text-decoration: none;
+                    color: #000;
+                    white-space: nowrap;
+                    font-weight: 400;
+                  "
+                  >政府機關</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >服務項目</a
+            >
+          </li>
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >成功案例</a
+            >
+          </li>
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >GOSU 教學資源</a
+            >
+          </li>
+          <li style="list-style: none; margin-left: 0.5rem; z-index: 9">
+            <a
+              href="#"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem 1rem;
+                text-decoration: none;
+                color: #000;
+                white-space: nowrap;
+                font-weight: 400;
+              "
+              >立即適用</a
+            >
+          </li>
+          <li
+            class="btn-item"
+            style="list-style: none; margin-left: 0.5rem; z-index: 9"
+          >
+            <a
+              class="btn"
+              href="#"
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0.75rem 1.5rem;
+                text-decoration: none;
+                color: #fff;
+                white-space: nowrap;
+                font-weight: 400;
+                background-color: #4285f4;
+                outline: 0;
+                border: none;
+                border-radius: 2rem;
+                margin-bottom: 0.5rem;
+              "
+              >聯絡我們</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
