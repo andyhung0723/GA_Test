@@ -21,6 +21,18 @@
   color: #fff !important;
 }
 
+.menu_open .menu_line-top {
+  transform: rotate(45deg) translate(8px, 7px);
+}
+
+.menu_open .menu_line-middle {
+  opacity: 0;
+}
+
+.menu_open .menu_line-down {
+  transform: rotate(-45deg) translate(6px, -5px);
+}
+
 @media (min-width: 768px) {
   .menu .dropdown:hover > a:after {
     content: '\ea14';
